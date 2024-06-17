@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+        body{
+    text-align:center;
+    background:blue;
+    font-family:Trebuchet MS; 
+    color:white;
+    font-size: 4vw;
+}
+    </style>
+</head>
+<body>
+    <h1>Online Trial Quiz</h1>
+    <p id="test"> </p>
+    <p id="score"> </p></p>
+    
+ <script>
+     var intro;
+     intro=prompt("Welcome to Our Online Quiz");
+     var instruction;
+     instruction=prompt("Please your answers should be either a, b, or c");
+     var name;
+     name=prompt("What is your name ");
+     var que1;
+     var score=0;
+     que1=prompt("What is the value of π (a) 22/7 (b) 21/8 (c) 25/4", );
+     
+  if(que1=='a'){ 
+  score++; 
+  que1="correct";
+  
+  }
+  else{
+      que1="wrong";
+  }
+  var que2;
+  que2=prompt("What is the value of 20<<2 (a) 20 (b) 60 (c) 80");
+  if(que2=='c'){   
+document.getElementById("test").innerHTML="That's correct";
+      score++;
+      que2="correct";
+  }
+  else{
+      que2="wrong";
+  }
+  var que3;
+  que3=prompt("In Cascading Style Sheet(CSS), which property hides an element, and the page is displayed as if the element is not there (a) visibility: none (b) display: none (c) visibility: block;");
+  if(que3=='b'){
+      que3="correct";
+      score++;
+  }
+  else{
+      que3="wrong";
+  }
+  var que4;
+  que4=prompt("What property in CSS do we use to change a text to uppercase or lowercase,   (a) text-transform (b)text-decoration (c) text-indent");
+  if(que4=='a'){
+      que4="correct";
+      score++;
+  }
+  else{
+      que4="wrong";
+  }
+  var que5;
+  que5=prompt("The a:hover property is used when a mouse ____ (a) left clicks (b) goes over a property (c) right clicks ");
+  if(que5=='b'){
+      que5="correct";
+      score++;
+  }
+  else{
+      que5="wrong";
+  }
+  var que6;
+  que6=prompt("What is the value of 33%2 (a) 1 (b) 2 (c) 3");
+  if(que6=='a'){
+      que6="correct";
+      score++;
+  }
+  else{
+      que6="wrong";
+  }
+  var que7;
+  que7=prompt("What is the value of 80>>2 (a) 20 (b) 40 (c) 25");
+  if(que7=='a'){
+      que7="correct";
+      score++;
+  }
+  else{
+      que7="wrong";
+  }
+  var que8;
+  que8=prompt("To check whether Django is installed on your terminal on Windows you type (a) pip3 install django (b) pip install django (c) i don't know 😂😂");
+  if(que8=='b'){
+      que8="correct";
+      score++;
+  }
+  else{
+      que8="wrong";
+  }
+  var que9;
+  que9=prompt("This is actually a bonus😂, The creator of this site is a fan of (a) Arsenal (b) Man United (c) Chelsea");
+  if(que9=='a'){
+      que9="correct";
+      score++;
+  }
+  else{
+      que9="wrong";
+  }
+  var que10;
+  que10=prompt("Who is the father of Computer (a) Charles Indyer (b) Jerry Ichin (c) Charles Babbage ");
+  if(que10=='c'){
+      que10="correct";
+      score++;
+  }
+  else{
+      que10="wrong";
+  }
+  document.getElementById("score").innerHTML="From our preview, we got this<br><br>"+"Question 1 was "+que1+"<br><br>"+ "Question 2 was "+que2+ "<br><br>"+"Question 3 was "+que3+"<br><br>"+ "Question 4 was "+que4+ "<br><br>"+"Question 5 was "+que5+"<br><br>"+ "Question 6 was "+que6+ "<br><br>"+"Question 7 was "+que7+"<br><br>"+ "Question 8 was "+que8+ "<br><br>"+"Question 9 was "+que9+"<br><br>"+ "Question 10 was "+que10+ "<br><br>" +name+ " you got a total of "+score+"/10";
+  ;
+ </script>   
+</body>
+</html>
+
+
+
+
